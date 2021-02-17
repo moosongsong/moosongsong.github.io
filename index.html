@@ -23,31 +23,137 @@
             crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Nanum+Gothic&display=swap"
+          rel="stylesheet">
 
     <style>
-        body{
+        body {
             /*font-family: 'Black Han Sans', sans-serif;*/
             /*font-family: 'Do Hyeon', sans-serif;*/
             font-family: 'Nanum Gothic', sans-serif;
-            font-size: 23px;
-            font-weight: 800;
+            /*font-size: 23px;*/
+            /*font-weight: 600;*/
+        }
+
+        header {
+            /*background-color: #8b8b8b;*/
+        }
+
+        .profile {
+            margin: 0px;
+            padding: 0px;
+            /*background-color: #81665C;*/
+        }
+
+        .container-fluid {
+            padding: 0px;
+        }
+
+        .inner_box {
+            padding: 0;
+        }
+
+        .image_profile {
+            width: inherit;
+            margin-bottom: 15px;
+            margin-right: 15px;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .contents {
+            margin: 0;
+            /*background-color: #777777;*/
+        }
+
+        .non {
+            border-color: white;
+        }
+
+
+        .container {
+            margin: auto;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 940px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 940px;
+            }
+        }
+
+        ul{
+            padding: 5px;
+            list-style: none;
         }
     </style>
 </head>
-<body>
+<body class="container">
+<hr class="non"/>
+<hr class="non"/>
 
-<div class="container" style="margin: 75px">
-    <div class="row">
-        <div class="col-12 col-md-6" style="background-color: #4acaa8">
-            프로필사진
+<header class="container-fluid">
+    <h1>송무송</h1>
+    <h2>Song Moo Song</h2>
+</header>
+<hr class="non"/>
+<div class="container-fluid">
+
+    <div class="row profile">
+        <div class="col-12 col-sm-4 inner_box">
+            <img src="images/profile.png" alt="no img" class="rounded image_profile"/>
         </div>
-        <div class="col-12 col-md-6" style="background-color: #81665C">
-            자기소개
+        <div class="col-12 col-sm-8">
+            <ul>
+                <li>
+                    <h5>안녕하세요. 개발자 송무송입니다.</h5>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i>
+<!--                    <i class="far fa-user"></i>-->
+                    1998.02.08.
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+<!--                    <i class="far fa-envelope"></i>-->
+                    songe08@gamil.com
+                </li>
+                <li>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/moosongsong">https://github.com/moosongsong</a>
+                </li>
+                <li>
+                    <i class="fas fa-pencil-alt"></i>
+                    <a href="https://clotty-cloud.tistory.com/">https://clotty-cloud.tistory.com/</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/song_moo_song/">https://www.instagram.com/song_moo_song/</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
+
+    <hr class="non"/>
+
+    <div class="row contents">
+        <div class="col-12 col-sm-6">
+            프로필 내용 기재
+        </div>
+        <div class="col-12 col-sm-6">
             프로필 내용 기재
         </div>
     </div>

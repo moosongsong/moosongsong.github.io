@@ -1,0 +1,120 @@
+body {
+    /*font-family: 'Black Han Sans', sans-serif;*/
+    /*font-family: 'Do Hyeon', sans-serif;*/
+    font-family: 'Nanum Gothic', sans-serif;
+    /*font-size: 23px;*/
+    /*font-weight: 600;*/
+}
+
+.padding_header {
+    padding-left: 15px;
+    padding-right: 15px;
+    /*background-color: #8b8b8b;*/
+}
+
+.profile {
+    margin: 0px;
+    /*padding: 0px;*/
+    /*background-color: #81665C;*/
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.inner_box {
+    padding: 0;
+}
+
+.image_profile {
+    width: inherit;
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.contents {
+    margin: 0;
+    /*background-color: #777777;*/
+}
+
+.non {
+    border-color: white;
+}
+
+
+.container {
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 940px;
+    }
+}
+
+ol {
+    padding: 5px;
+    list-style: none;
+}
+
+ul {
+    padding-left: 25px;
+}
+li{
+    margin-bottom: 3px;
+}
+
+.fadein {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

@@ -79,6 +79,17 @@ li{
     margin-bottom: 7px;
 }
 
+a{
+    color: indianred;
+}
+
+.contents i{
+    color: indianred;
+}
+i:hover{
+    cursor: pointer;
+}
+
 .fadein {
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */

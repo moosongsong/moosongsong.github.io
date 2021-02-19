@@ -31,10 +31,8 @@
     <link rel="stylesheet" href="style2021.css">
 </head>
 <body class="container">
-<hr class="non"/>
-<hr class="non"/>
-
-<header class="container-fluid " >
+<div style="height: 60px"></div>
+<header class="container-fluid ">
     <div class="padding_header">
         <h1>송무송</h1>
         <h2>Song Moo Song</h2>
@@ -86,7 +84,7 @@
     <div class="row contents">
         <div class="col-12 col-sm-6">
 
-            <h6>📚 Educations</h6>
+            <h5>📚 Educations</h5>
             <ul>
                 <li>
                     숭실대학교 소프트웨어학부 정보보호 융합전공
@@ -104,25 +102,51 @@
             </ul>
             <hr class="non"/>
 
-            <h6>💎 Expensive Experiences</h6>
+            <h5>💎 Expensive Experiences</h5>
             <ul>
                 <li>
                     원격수업 지원교사 근무
-                    <a href="#"><i class="fas fa-search"></i></a>
+                    <i class="fas fa-search"></i>
                     <br/>(2020.10~2020.12)
                 </li>
                 <li>
                     콘서트 진행요원
-                    <a href="#"><i class="fas fa-search"></i></a>
+                    <i class="fas fa-search"  data-toggle="modal" data-target="#concertModal"></i>
+                    <div class="modal fade" id="concertModal" tabindex="-1" role="dialog" aria-labelledby="concertModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="concertModalLabel">참여 콘서트 목록</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        20180908~20180909 스펙트럼뮤직페스티벌,
+                                        20190615~20190616 서울파크뮤직페스티벌,
+                                        20190728 이제서른 콘서트,
+                                        20190809~20190811 데이식스 서울 단독 콘서트,
+                                        20190827 X1 프리미어 쇼콘,
+                                        20190830~20190901 세븐틴 Ode to you 콘서트,
+                                        20190928~20190929 빅스 paralle 콘서트,
+                                        20191214~20191215 김재환 콘서트,
+                                        20101221~20191222 이승철 콘서트,
+                                        20191228~20181229 슈퍼밴드 콘서트
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <br/>(2018.09~2019.12)
                 </li>
             </ul>
-            <hr class="non"/>
 
+            <hr class="non"/>
         </div>
 
         <div class="col-12 col-sm-6">
-            <h6>🎢 Active Experiences</h6>
+            <h5>🎢 Active Experiences</h5>
             <ul>
                 <li>
                     숭실대학교 중앙동아리 '화인부락' 39기 회장
@@ -152,7 +176,7 @@
     <div class="row contents">
 
         <div class="col-12 col-sm-6">
-            <h6>🏆 Prize</h6>
+            <h5>🏆 Prize</h5>
             <ul>
                 <li>
                     춘계학술 대회 동상
@@ -163,7 +187,7 @@
 
             <hr class="non"/>
 
-            <h6>🔧 Licence</h6>
+            <h5>🔧 Licence</h5>
             <ul>
                 <li>
                     정보처리기사
@@ -173,25 +197,55 @@
                 </li>
                 <li>
                     부가적인 자격증
+                    <!-- Button trigger modal -->
+                    <i class="fas fa-search" data-toggle="modal" data-target="#LicenceModal" ></i>
+<!--                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#LicenceModal"> 모달-->
+<!--                    </button> &lt;!&ndash; Modal &ndash;&gt;-->
+                    <div class="modal fade" id="LicenceModal" tabindex="-1" role="dialog" aria-labelledby="LicenceModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"><h5 class="modal-title" id="LicenceModalLabel">부가 자격증 목록</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>부가 자격증 목록<br/>
+                                        포토샵, 동영상, 운전면허</p>
+                                </div>
+<!--                                <div class="modal-footer">-->
+<!--                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
             <hr class="non"/>
         </div>
 
         <div class="col-12 col-sm-6">
-            <h6>🔭 Skills</h6>
+            <h5>🔭 Skills</h5>
             <img src="https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=C&logoColor=black" alt="c">
             <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" alt="Java">
-            <img src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white" alt="Spring Framework">
-            <img src="https://img.shields.io/badge/-Python3-3776AB?style=flat-square&logo=Python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"
+                 alt="Spring Framework">
+            <img src="https://img.shields.io/badge/-Python3-3776AB?style=flat-square&logo=Python&logoColor=white"
+                 alt="Python">
             <img src="https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c&logoColor=white" alt="cpp">
-            <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" alt="HTML5">
+            <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                 alt="HTML5">
             <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white" alt="CSS">
-            <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white" alt="Bootstrap">
-            <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-            <img src="https://img.shields.io/badge/-Oracle-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle">
-            <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white" alt="jQuery">
-            <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black" alt="JS ES6">
+            <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white"
+                 alt="Bootstrap">
+            <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white"
+                 alt="MariaDB">
+            <img src="https://img.shields.io/badge/-Oracle-F80000?style=flat-square&logo=oracle&logoColor=white"
+                 alt="Oracle">
+            <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+                 alt="jQuery">
+            <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black"
+                 alt="JS ES6">
             <hr class="non"/>
         </div>
     </div>
@@ -200,42 +254,55 @@
     <hr class="non"/>
 
     <div class="row contents">
-        <h6>💾 Projects</h6>
+        <div class="col-12" style="margin-bottom: 15px">
+            <h5>💾 Projects</h5>
+        </div>
     </div>
 
-    <hr class="non"/>
-
-    <div class="row contents ">
+    <div class="row contents">
         <div class="col-12 col-md-6">
-            <img src="projectImage/fallmain.png" class="rounded image_profile">
+            <img src="projectImage/main.png" class="rounded image_profile">
         </div>
         <div class="col-12 col-md-6">
-            <h6>1인가구를 위한 마감음식 패키징 서비스<a href="https://github.com/moosongsong/Dinner41_Spring_Project"> <i class="fab fa-github"></i></a></h6>
+            <h6>1인가구를 위한 마감음식 패키징 서비스<a href="https://github.com/moosongsong/Dinner41_Spring_Project"> <i
+                    class="fab fa-github"></i></a></h6>
             <ol>
                 <li>
                     프로젝트 기간 : 2020.07 ~ 2020.08
                 </li>
                 <li>
                     사용 기술 :
-                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" alt="HTML5">
-                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black" alt="JSP">
-                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white" alt="CSS">
-                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white" alt="Bootstrap">
-                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" alt="Java">
-                    <img src="https://img.shields.io/badge/-SpringFramework-6DB33F?style=flat-square&logo=Spring&logoColor=white" alt="Spring Framework">
-                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white" alt="Apache Maven">
-                    <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git&logoColor=white" alt="Git">
-                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white" alt="jQuery">
-                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black" alt="JS ES6">
+                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                         alt="HTML5">
+                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black"
+                         alt="JSP">
+                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+                         alt="CSS">
+                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white"
+                         alt="Bootstrap">
+                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white"
+                         alt="MariaDB">
+                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white"
+                         alt="Java">
+                    <img src="https://img.shields.io/badge/-SpringFramework-6DB33F?style=flat-square&logo=Spring&logoColor=white"
+                         alt="Spring Framework">
+                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white"
+                         alt="Apache Maven">
+                    <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git&logoColor=white"
+                         alt="Git">
+                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+                         alt="jQuery">
+                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black"
+                         alt="JS ES6">
 
                 </li>
                 <li>
                     자영업자와 1인 가구 소비자들을 위한 마감 음식 패키징 서비스입니다.
             </ol>
         </div>
+    </div>
 
-
+    <div class="row contents ">
         <div class="col-12 col-md-6">
             <img src="projectImage/fallmain.png" class="rounded image_profile">
         </div>
@@ -247,55 +314,79 @@
                 </li>
                 <li>
                     사용 기술 :
-                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" alt="HTML5">
-                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black" alt="Java">
-                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white" alt="CSS">
-                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white" alt="Bootstrap">
-                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" alt="Java">
-                    <img src="https://img.shields.io/badge/-JavaServlet-9c8876?style=flat-square&logo=java&logoColor=white" alt="Servlet">
-                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white" alt="Apache Maven">
-                    <img src="https://img.shields.io/badge/-Subversion-809CC9?style=flat-square&logo=Subversion&logoColor=white" alt="Subversion">
-                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white" alt="jQuery">
-                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black" alt="JS ES6">
+                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                         alt="HTML5">
+                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black"
+                         alt="Java">
+                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+                         alt="CSS">
+                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white"
+                         alt="Bootstrap">
+                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white"
+                         alt="MariaDB">
+                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white"
+                         alt="Java">
+                    <img src="https://img.shields.io/badge/-JavaServlet-9c8876?style=flat-square&logo=java&logoColor=white"
+                         alt="Servlet">
+                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white"
+                         alt="Apache Maven">
+                    <img src="https://img.shields.io/badge/-Subversion-809CC9?style=flat-square&logo=Subversion&logoColor=white"
+                         alt="Subversion">
+                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+                         alt="jQuery">
+                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black"
+                         alt="JS ES6">
                 </li>
                 <li>외국 교환 프로그램에 참여하는 한국 교환학생들의 현지 생활 적응을 위한 커뮤니티</li>
             </ol>
         </div>
     </div>
 
-
-    <div class="row contents ">
+    <div class="row contents">
         <div class="col-12 col-md-6">
-            <img src="projectImage/fallmain.png" class="rounded image_profile">
+            <img src="projectImage/snp.png" class="rounded image_profile">
         </div>
         <div class="col-12 col-md-6">
-            <h6>1인가구를 위한 마감음식 패키징 서비스<a href="https://github.com/moosongsong/Dinner41_Spring_Project"> <i class="fab fa-github"></i></a></h6>
+            <h6>패킷 스니핑을 이용한 TCP/IP 시각화<a href="https://github.com/moosongsong/Dinner41_Spring_Project"> <i
+                    class="fab fa-github"></i></a></h6>
             <ol>
                 <li>
-                    프로젝트 기간 : 2020.07 ~ 2020.08
+                    프로젝트 기간 : 2019.03~ 2019.05
                 </li>
                 <li>
                     사용 기술 :
-                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" alt="HTML5">
-                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black" alt="JSP">
-                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white" alt="CSS">
-                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white" alt="Bootstrap">
-                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" alt="Java">
-                    <img src="https://img.shields.io/badge/-SpringFramework-6DB33F?style=flat-square&logo=Spring&logoColor=white" alt="Spring Framework">
-                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white" alt="Apache Maven">
-                    <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git&logoColor=white" alt="Git">
-                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white" alt="jQuery">
-                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black" alt="JS ES6">
+                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                         alt="HTML5">
+                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black"
+                         alt="JSP">
+                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+                         alt="CSS">
+                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white"
+                         alt="Bootstrap">
+                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white"
+                         alt="MariaDB">
+                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white"
+                         alt="Java">
+                    <img src="https://img.shields.io/badge/-SpringFramework-6DB33F?style=flat-square&logo=Spring&logoColor=white"
+                         alt="Spring Framework">
+                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white"
+                         alt="Apache Maven">
+                    <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git&logoColor=white"
+                         alt="Git">
+                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+                         alt="jQuery">
+                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black"
+                         alt="JS ES6">
 
                 </li>
                 <li>
-                    자영업자와 1인 가구 소비자들을 위한 마감 음식 패키징 서비스입니다.
+                    전문적 지식이 없는 일반인들도 쉽게 사용 및 이해할 수 있는 TCP/IP 응용 프로그램
             </ol>
         </div>
+    </div>
 
 
+    <div class="row contents ">
         <div class="col-12 col-md-6">
             <img src="projectImage/fallmain.png" class="rounded image_profile">
         </div>
@@ -307,29 +398,43 @@
                 </li>
                 <li>
                     사용 기술 :
-                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white" alt="HTML5">
-                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black" alt="Java">
-                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white" alt="CSS">
-                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white" alt="Bootstrap">
-                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" alt="Java">
-                    <img src="https://img.shields.io/badge/-JavaServlet-9c8876?style=flat-square&logo=java&logoColor=white" alt="Servlet">
-                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white" alt="Apache Maven">
-                    <img src="https://img.shields.io/badge/-Subversion-809CC9?style=flat-square&logo=Subversion&logoColor=white" alt="Subversion">
-                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white" alt="jQuery">
-                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black" alt="JS ES6">
+                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                         alt="HTML5">
+                    <img src="https://img.shields.io/badge/-JSP-ffa552?style=flat-square&logo=Java&logoColor=black"
+                         alt="Java">
+                    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+                         alt="CSS">
+                    <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=Bootstrap&logoColor=white"
+                         alt="Bootstrap">
+                    <img src="https://img.shields.io/badge/-MariaDB-1F305F?style=flat-square&logo=mariadb&logoColor=white"
+                         alt="MariaDB">
+                    <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white"
+                         alt="Java">
+                    <img src="https://img.shields.io/badge/-JavaServlet-9c8876?style=flat-square&logo=java&logoColor=white"
+                         alt="Servlet">
+                    <img src="https://img.shields.io/badge/-ApacheMaven-C71A36?style=flat-square&logo=apache&logoColor=white"
+                         alt="Apache Maven">
+                    <img src="https://img.shields.io/badge/-Subversion-809CC9?style=flat-square&logo=Subversion&logoColor=white"
+                         alt="Subversion">
+                    <img src="https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+                         alt="jQuery">
+                    <img src="https://img.shields.io/badge/-JavaScript-F7Df1E?style=flat-square&logo=JavaScript&logoColor=black"
+                         alt="JS ES6">
                 </li>
                 <li>외국 교환 프로그램에 참여하는 한국 교환학생들의 현지 생활 적응을 위한 커뮤니티</li>
             </ol>
         </div>
     </div>
 </div>
-<hr class="non"/>
+
+<div style="height: 100px"></div>
+
 <footer class="container-fluid">
     <div class="text-center">
         designed by using html5, css3, javascript, bootstrap and me.
     </div>
 </footer>
-<hr class="non"/><hr class="non"/><hr class="non"/>
+
+<div style="height: 60px"></div>
 </body>
 </html>

@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ol {
-    padding: 5px;
+    padding: 5px 5px 0;
     list-style: none;
 }
 
@@ -76,7 +76,7 @@ ul {
     padding-left: 25px;
 }
 li{
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 
 .fadein {
